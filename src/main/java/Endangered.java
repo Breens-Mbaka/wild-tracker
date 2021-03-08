@@ -63,7 +63,7 @@ public class Endangered extends Animals {
 
     public static List<Endangered> allEndangered() {
         String sql = "SELECT * FROM animals where threattype='Endangereds'";
-        try(Connection con = DB.sql2o.open()) {
+        try(Connection con = Database.sql2o.open()) {
             return con.createQuery(sql)
                     .throwOnMappingFailure(false)
                     .executeAndFetch(Endangered.class);
