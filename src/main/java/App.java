@@ -96,7 +96,7 @@ public class App {
         get("/animals", (req, res) -> {
             Map<Object, Object> model = new HashMap<>();
             model.put("animals", Animals.all());
-            model.put("endangereds", Endangered.allEndangered());
+            model.put("endangered", Endangered.allEndangered());
             return new ModelAndView(model, "animals.hbs");
         }, new HandlebarsTemplateEngine());
 
@@ -106,7 +106,7 @@ public class App {
             String name = req.queryParams("name");
             String health = req.queryParams("health");
             String age = req.queryParams("age");
-            if (req.queryParams("endangereds") != null) {
+            if (req.queryParams("endangered") != null) {
                 if (!(name.trim().isEmpty() || health.trim().isEmpty() || age.trim().isEmpty())) {
 
                     Endangered endangereds = new Endangered(name, health, age);

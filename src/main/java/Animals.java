@@ -40,7 +40,7 @@ public class Animals {
     }
 
     public void save() {
-        try(Connection con = DB.sql2o.open()) {
+        try(Connection con = Database.sql2o.open()) {
 
             String sql = "INSERT INTO animals (name,health,age) VALUES (:name,:health,:age )";
             this.id = (int) con.createQuery(sql, true)
@@ -56,7 +56,7 @@ public class Animals {
     public static List<Animals> all() {
 
         String sql = "SELECT * FROM animals";
-        try(Connection con = DB.sql2o.open()) {
+        try(Connection con = Database.sql2o.open()) {
             return con.createQuery(sql)
                     .throwOnMappingFailure(false)
                     .executeAndFetch(Animals.class);
@@ -65,7 +65,7 @@ public class Animals {
 
 
     public static Animals find(int id) {
-        try(Connection con = DB.sql2o.open()) {
+        try(Connection con = Database.sql2o.open()) {
             String sql = "SELECT * FROM animals where id=:id";
             Animals animals = con.createQuery(sql)
                     .addParameter("id", id)
