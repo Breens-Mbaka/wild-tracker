@@ -13,8 +13,9 @@
 * [Acknowledgements](#acknowledgements)
 
 
+#Project name
+> Wildlife Tracking app
 
-<!-- ABOUT THE PROJECT -->
 ## About The Project
 
 The Forest Service is considering a proposal from a timber company to clearcut a nearby forest of Douglas Fir. Before this proposal may be approved, they must complete an environmental impact study. This application allows Rangers to track wildlife sightings in the area.

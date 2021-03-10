@@ -1,5 +1,4 @@
 import org.sql2o.Connection;
-
 import java.util.List;
 import java.util.Objects;
 
