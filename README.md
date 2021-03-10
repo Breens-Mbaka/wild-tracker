@@ -1,4 +1,4 @@
-#Project name
+# Project name
 > Wildlife Tracking app
 
 ## About The Project
@@ -23,6 +23,8 @@ This is a web application used to record data for wildilfe seen in the forest.It
 
 3. Wait gradle to install all the dependencies automatically
 
+## Live site
+[Live link](https://breens.herokuapp.com/)
 
 ## Usage
 
@@ -73,7 +75,7 @@ Both classes store data in the same animals table using Single Table Inheritance
 
 For each sighting created, the animal object should also be created that maps to the sighting.
 
-## BDD
+## Behavior Driven Development
 
 1. User navigates to the _**GET sighting/new**_, two check boxes appear that shows and hides the endangered species and common wildlife forms.
 
@@ -82,34 +84,5 @@ For each sighting created, the animal object should also be created that maps to
 3. User submits the common form through the _**POST sightins/common/new**_ method, the input form data is stored to the animals table.
 
 4. User navigates to the _**GET  /sightings**_, template with all sightings saved is displayed
-
-## Contributing
-
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-
-
-<!-- LICENSE -->
-## License
-
-Distributed under the MIT License. See `LICENSE` for more information.
-
-##Live site
-
-Project Link:
-
-
-
-<!-- ACKNOWLEDGEMENTS -->
-## Acknowledgements
-* [IntelliJ](https://www.jetbrains.com/idea/)
-* [Icons8](https://icons8.com/icons)
-* [Bootstrap](https://getbootstrap.com/)
 
 
