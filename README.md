@@ -1,48 +1,16 @@
-## Table of Contents
-
-* [About the Project](#about-the-project)
-    * [Built With](#built-with)
-* [Getting Started](#getting-started)
-    * [Prerequisites](#prerequisites)
-    * [Installation](#installation)
-* [Usage](#usage)
-* [BDD](#bdd)
-* [Contributing](#contributing)
-* [License](#license)
-* [Contact](#contact)
-* [Acknowledgements](#acknowledgements)
-
-
 #Project name
 > Wildlife Tracking app
 
 ## About The Project
+This is a web application used to record data for wildilfe seen in the forest.It also takes into account data for location found and rangers information
 
-The Forest Service is considering a proposal from a timber company to clearcut a nearby forest of Douglas Fir. Before this proposal may be approved, they must complete an environmental impact study. This application allows Rangers to track wildlife sightings in the area.
-
-The application tracks two categories of wildlife: endangered species and the common ones.
-
-### Built With
-This is program is wholely written in Java and built with
-* [Oracle Java 11.8](https://www.oracle.com/java/)
-* [Gradle 6.5](https://gradle.org/)
-* [Spark 2.6.0](http://sparkjava.com/)
-* [Postgres 42.2.5](https://www.postgresql.org/)
-* [Handlebars 2.5.5](https://handlebarsjs.com/)
-* [Apache Maven 2.3.2](https://maven.apache.org/)
-* [Heroku Plugin 3.0.2](https://elements.heroku.com/addons)
-* [JUnit4](https://junit.org/junit5/)
-
-
-
-<!-- GETTING STARTED -->
-## Getting Started
-
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-In order to build this app locally, first make sure you have all the programs listed in [Built with](#built-with)
+### Technology
+* Java* Maven
+* Gradle
+* Heroku(for deploying)
+* Spark 2.6.0
+* Postgres
+* Handlebars
 
 
 ### Installation
@@ -51,7 +19,7 @@ In order to build this app locally, first make sure you have all the programs li
     ```sh
     $ git clone "repository-url"
     ```
-2. If you don't Postgres installed on your local PC visit [this to install it](https://www.postgresql.org/download/)
+2. Have Postgres installed on your laptop
 
 3. Wait gradle to install all the dependencies automatically
 
