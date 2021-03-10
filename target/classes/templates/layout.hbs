@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{#block "title"}}Wild-tracker{{/block}}</title>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' />
+    <link rel='stylesheet' href='index.css' />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+</head>
+<div class="nav">
+    <div class="navbar-brand">Wild-Tracker</div>
+    <a class="nav-link" href="/">Home</a>
+    <a class="nav-link" href="/ranger">Rangers</a>
+    <a class="nav-link" href="/sightings">Sightings</a>
+    <a class="nav-link" href="/animals">Animals</a>
+    <a class="nav-link" href="/location">Locations</a>
+</div>
+<body>
+<main>
+    <!--begin main template-->
+    <div class="container">
+        <div class="">
+            {{#block "content"}}
+
+            {{/block}}
+        </div>
+    </div>
+
+{{#block "footer"}}
+        <div class="footer">
+
+        </div>
+    </main>
+    </body>
+    </html>
+{{/block}}

@@ -13,7 +13,7 @@ public class App {
         if (processBuilder.environment().get("PORT") != null) {
             return Integer.parseInt(processBuilder.environment().get("PORT"));
         }
-        return 4567; //return default port if heroku-port isn't set (i.e. on localhost)
+        return 4567;
     }
     public static void main(String[] args) {
 
@@ -32,13 +32,11 @@ public class App {
             return new ModelAndView(model, "index.hbs");
         }, new HandlebarsTemplateEngine());
 
-        //show new ranger form
         get("/ranger/new", (req, res) -> {
             Map<String, Object> model = new HashMap<>();
             return new ModelAndView(model, "ranger-form.hbs");
         }, new HandlebarsTemplateEngine());
 
-        //ranger: process new ranger form
         post("/ranger", (req, res) -> {
             Map<String, Object> model = new HashMap<>();
             String rangerName = req.queryParams("rangerName");
@@ -54,7 +52,6 @@ public class App {
             return null;
         }, new HandlebarsTemplateEngine());
 
-        //get: show an individual ranger
         get("/ranger/:id", (req, res) -> {
             Map<String, Object> model = new HashMap<>();
             Ranger ranger = Ranger.find(Integer.parseInt(req.params(":id")));
@@ -91,8 +88,6 @@ public class App {
             return null;
         }, new HandlebarsTemplateEngine());
 
-
-        //Animals
         get("/animals", (req, res) -> {
             Map<Object, Object> model = new HashMap<>();
             model.put("animals", Animals.all());
@@ -100,7 +95,6 @@ public class App {
             return new ModelAndView(model, "animals.hbs");
         }, new HandlebarsTemplateEngine());
 
-        //post
         post("/animals/new", (req, res) -> {
             Map<String, Object> model = new HashMap<>();
             String name = req.queryParams("name");
